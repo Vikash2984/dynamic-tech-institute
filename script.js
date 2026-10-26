@@ -97,8 +97,8 @@ const rowA = testimonials.slice(0, half), rowB = testimonials.slice(half);
 document.getElementById('ptrackA').innerHTML = [...rowA, ...rowA].map(card).join('');
 document.getElementById('ptrackB').innerHTML = [...rowB, ...rowB].map(card).join('');
 
-const companies = ["Izadah — UAE","Al Dhabi Group — UAE","Arees — Saudi Arabia","Madinat Jalfar — UAE","Marmoom — UAE","ZRT Contracting LLC — UAE","El Seif Engineering — Saudi Arabia","Whitespot — UAE","Elegancia — Rwanda","BK Gulf LLC — UAE","Oxypro — UAE","LG","Samsung","Hitachi","Blue Star","Daikin","Carrier","Whirlpool","Panasonic","O General","Mitsubishi"];
-document.getElementById('acTrack').innerHTML = [...companies,...companies].map(c=>`<span>${c}</span>`).join('');
+// company logos are now static markup in index.html (#acTrack)
+
 
 // ===== contact form =====
 document.getElementById('enquiryForm').addEventListener('submit', function(e){
