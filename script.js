@@ -97,12 +97,15 @@ const rowA = testimonials.slice(0, half), rowB = testimonials.slice(half);
 document.getElementById('ptrackA').innerHTML = [...rowA, ...rowA].map(card).join('');
 document.getElementById('ptrackB').innerHTML = [...rowB, ...rowB].map(card).join('');
 
-// company logos are now static markup in index.html (#acTrack)
+/* ===== contact form ===== */
+const enquiryForm = document.getElementById('enquiryForm');
 
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', function () {
+    const formNote = document.getElementById('formNote');
 
-// ===== contact form =====
-document.getElementById('enquiryForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  document.getElementById('formNote').textContent = "Thanks — we've received your enquiry and will call you shortly.";
-  this.reset();
-});
+    if (formNote) {
+      formNote.textContent = 'Sending your enquiry...';
+    }
+  });
+}
