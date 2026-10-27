@@ -190,25 +190,58 @@
         <div class="ci-row"><span class="ic">✉️</span><div><b>Email</b>admissions@rdti.in</div></div>
         <div class="ci-row"><span class="ic">🕘</span><div><b>Hours</b>Mon – Sat, 9:00 AM – 6:30 PM</div></div>
       </div>
-      <form class="contact-form" id="enquiryForm">
-        <div class="fg">
-          <div class="field"><label for="fname">Full name</label><input id="fname" type="text" required placeholder="Your name"></div>
-          <div class="field"><label for="fphone">Phone number</label><input id="fphone" type="tel" required placeholder="10-digit mobile"></div>
-          <div class="field full"><label for="courseSelect">Course interested in</label>
-            <select id="courseSelect">
-              <option>Refrigeration &amp; AC Technician</option>
-              <option>Industrial Welding</option>
-              <option>Electrician &amp; Motor Rewinding</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
-          <div class="field full"><label for="fmsg">Message</label><textarea id="fmsg" rows="3" placeholder="Anything you'd like us to know"></textarea></div>
-        </div>
-        <div class="submit-row">
-          <button type="submit" class="hp-cta">Send Enquiry</button>
-          <span class="form-note" id="formNote">We usually reply within one business day.</span>
-        </div>
-      </form>
+      
+
+<form class="contact-form" id="enquiryForm"
+      action="https://formspree.io/f/mnppdwdb" method="POST">
+
+  <div class="fg">
+    <div class="field">
+      <label for="fname">Full name</label>
+      <input id="fname" name="Name" type="text"
+             required placeholder="Your name">
+    </div>
+
+    <div class="field">
+      <label for="fphone">Phone number</label>
+      <input id="fphone" name="Phone" type="tel"
+             required placeholder="10-digit mobile">
+    </div>
+
+    <div class="field full">
+      <label for="courseSelect">Course interested in</label>
+      <select id="courseSelect" name="Course" required>
+        <option value="Refrigeration & AC Technician">
+          Refrigeration &amp; AC Technician
+        </option>
+        <option value="Industrial Welding">
+          Industrial Welding
+        </option>
+        <option value="Electrician & Motor Rewinding">
+          Electrician &amp; Motor Rewinding
+        </option>
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+    </div>
+
+    <div class="field full">
+      <label for="fmsg">Message</label>
+      <textarea id="fmsg" name="Message" rows="3"
+                placeholder="Anything you'd like us to know"></textarea>
+    </div>
+  </div>
+
+  <div class="submit-row">
+    <button type="submit" class="hp-cta">
+      Send Enquiry
+    </button>
+    <span class="form-note" id="formNote">
+      We usually reply within one business day.
+    </span>
+  </div>
+
+</form>
+
     </div>
   </div>
   <footer class="site-footer">
