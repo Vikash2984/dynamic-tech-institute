@@ -238,15 +238,15 @@ h1,h2,h3,h4{font-family:var(--font);font-weight:800;letter-spacing:-.02em;line-h
   .site-footer .footer-content{flex-direction:column;text-align:center;padding:0 20px}
 
   /* HERO: tighten spacing so carousel doesn't overlap CTA */
-  .hp-inner{padding:20px 20px 16px;gap:18px;min-height:calc(100vh - var(--nav-h))}
+  .hp-inner{padding:8px 20px 16px;gap:18px;min-height:calc(100vh - var(--nav-h))}
   .hp-sub{margin-bottom:16px;font-size:14.5px}
   .hp-cta{padding:13px 24px;font-size:15px}
-  .cover-flow{height:275px;margin-top:6px}
-  .cf-card{width:205px;height:252px;padding:11px;border-radius:18px}
+  .cover-flow{height:318px;margin-top:6px}
+  .cf-card{width:238px;height:292px;padding:12px;border-radius:19px}
   .cf-card .ph-img{border-radius:12px}
-  .cf-card figcaption{padding:8px 3px 2px;font-size:11.5px}
-  .cf-card[data-pos="-1"]{transform:translateX(-172px) scale(.8)}
-  .cf-card[data-pos="1"]{transform:translateX(172px) scale(.8)}
+  .cf-card figcaption{padding:9px 3px 2px;font-size:11.5px}
+  .cf-card[data-pos="-1"]{transform:translateX(-198px) scale(.8)}
+  .cf-card[data-pos="1"]{transform:translateX(198px) scale(.8)}
 
   /* CONTACT: fit both cards inside the snap section (nav + footer accounted for) */
   .ma-contact .ma-container{padding:16px 20px 12px;gap:12px;justify-content:flex-start}
