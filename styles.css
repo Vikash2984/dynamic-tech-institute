@@ -72,7 +72,7 @@ h1,h2,h3,h4{font-family:var(--font);font-weight:800;letter-spacing:-.02em;line-h
 /* ===== COVER FLOW CAROUSEL (hero) ===== */
 .cover-flow{position:relative;height:400px;display:flex;justify-content:center;align-items:center;perspective:1400px;margin-top:-55px}
 .cf-card{position:absolute;width:325px;height:375px;background:#fff;border-radius:20px;box-shadow:0 20px 50px rgba(10,31,68,.18);padding:14px;overflow:hidden;transition:transform .55s cubic-bezier(.4,0,.2,1),opacity .5s,box-shadow .5s;cursor:pointer;will-change:transform}
-.cf-card .ph-img{width:100%;aspect-ratio:1/1;border-radius:12px}
+.cf-card .ph-img{width:100%;aspect-ratio:1/1;border-radius:12px;display:block;object-fit:cover}
 .cf-card figcaption{padding:10px 4px 4px;font-size:12px;display:flex;flex-direction:column;gap:2px}
 .cf-card .from{color:var(--ink-soft)}
 .cf-card .to{color:var(--navy);font-weight:700}
@@ -241,10 +241,12 @@ h1,h2,h3,h4{font-family:var(--font);font-weight:800;letter-spacing:-.02em;line-h
   .hp-inner{padding:20px 20px 16px;gap:18px;min-height:calc(100vh - var(--nav-h))}
   .hp-sub{margin-bottom:16px;font-size:14.5px}
   .hp-cta{padding:13px 24px;font-size:15px}
-  .cover-flow{height:210px;margin-top:8px}
-  .cf-card{width:160px;height:195px;padding:10px;border-radius:16px}
-  .cf-card .ph-img{border-radius:10px}
-  .cf-card figcaption{padding:8px 3px 2px;font-size:11px}
+  .cover-flow{height:275px;margin-top:6px}
+  .cf-card{width:205px;height:252px;padding:11px;border-radius:18px}
+  .cf-card .ph-img{border-radius:12px}
+  .cf-card figcaption{padding:8px 3px 2px;font-size:11.5px}
+  .cf-card[data-pos="-1"]{transform:translateX(-172px) scale(.8)}
+  .cf-card[data-pos="1"]{transform:translateX(172px) scale(.8)}
 
   /* CONTACT: fit both cards inside the snap section (nav + footer accounted for) */
   .ma-contact .ma-container{padding:16px 20px 12px;gap:12px;justify-content:flex-start}
